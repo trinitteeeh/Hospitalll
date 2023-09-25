@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="A140321.HOSPITALIE_OLAP"
+  DTS:DTSID="{9E24EA77-7921-4B11-BA53-1EDD0E45D9F8}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=A140321;Initial Catalog=HOSPITALIE_OLAP;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Integration Services Project1-{9E24EA77-7921-4B11-BA53-1EDD0E45D9F8}A140321.HOSPITALIE_OLAP;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

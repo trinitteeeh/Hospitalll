@@ -1,0 +1,353 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="908b0318-b3a9-4469-b71e-30eefa432f76" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>SubscriptionCube</ID>
+  <Name>SubscriptionCube</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7286" scrolltop="3014" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="19817" y="7567" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="STAFFDIMENSION" left="1065" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3466" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00008a0d000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_STAFFDIMENSION" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="SUBSCRIPTIONFACT" left="20" top="6819" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="5556" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b41500004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_SUBSCRIPTIONFACT" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="CUSTOMERDIMENSION" left="694" top="12368" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="4207" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00006f1000004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_CUSTOMERDIMENSION" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="BENEFITDIMENSION" left="7976" top="6608" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3254" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b60c0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_BENEFITDIMENSION" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="2399" top="3920" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[SUBSCRIPTIONFACT-STAFFDIMENSION]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="5" destattachpoint="8" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="2798" y="4419" />
+              <point x="2798" y="6819" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="2398" top="9668" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[SUBSCRIPTIONFACT-CUSTOMERDIMENSION]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="2" sourceattachpoint="6" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="2797" y="12368" />
+              <point x="2797" y="11168" />
+              <point x="2798" y="11168" />
+              <point x="2798" y="9968" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="5276" top="7995" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[SUBSCRIPTIONFACT-BENEFITDIMENSION]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="2" sourceattachpoint="16" destattachpoint="23" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="7976" y="8394" />
+              <point x="6776" y="8394" />
+              <point x="6776" y="8393" />
+              <point x="5576" y="8393" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-7286</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>3014</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="53bcaa1f-bf4a-483d-92a5-28f62a425109">
+      <ID>CUSTOMERDIMENSION</ID>
+      <Name>CUSTOMERDIMENSION</Name>
+      <DimensionID>CUSTOMERDIMENSION</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="65252277-fa91-4b09-8ca8-e4e808d48479">
+          <AttributeID>CUSTOMERCODE</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="048a2b9a-57ef-4716-9c9f-115b73d6bfb1">
+          <AttributeID>CUSTOMERID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="58bbf15a-1623-4cb6-aca4-f7599ed492e3">
+          <AttributeID>CUSTOMERNAME</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="71e8a24b-eeb4-43f9-a7e4-c6d9634ef694">
+          <AttributeID>CUSTOMERGENDER</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3d793fcd-a008-48a9-9440-7504b49fe47d">
+          <AttributeID>CUSTOMERADDRESS</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="00e1be9b-824d-40d6-aae0-bee4ec56511c">
+      <ID>STAFFDIMENSION</ID>
+      <Name>STAFFDIMENSION</Name>
+      <DimensionID>STAFFDIMENSION</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c3d18063-572a-4e8e-9a96-0b9e3b5ffe86">
+          <AttributeID>STAFFCODE</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9ee2dcad-fbf5-400a-bb93-039552f90534">
+          <AttributeID>STAFFID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0ed62a4d-0f75-460e-bf75-af1349fe5e98">
+          <AttributeID>STAFFNAME</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="755fab58-3ac9-48c7-9eaf-61bc8cb43bf1">
+          <AttributeID>STAFFDOB</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9cb0e58e-7a54-4476-8f81-3444c0cb0c62">
+          <AttributeID>STAFFADDRESS</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9dd3b0e0-c2c6-484d-bd07-6ba3a305afbc">
+          <AttributeID>STAFFSALARY</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="dffb9a4d-b77d-40f4-98ac-15e807c1abbd">
+          <AttributeID>VALIDFROM</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3849a3df-07ba-4348-9dad-c16f230e194c">
+          <AttributeID>VALIDTO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="cde6f6c7-35e7-4a4c-8de7-1aa7290c8573">
+      <ID>BENEFITDIMENSION</ID>
+      <Name>BENEFITDIMENSION</Name>
+      <DimensionID>BENEFITDIMENSION</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e566b7f7-f8c5-4cfc-ac10-299a2e8263bb">
+          <AttributeID>BENEFITCODE</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5c465e7e-a27d-4877-922d-c5cfa342ebd3">
+          <AttributeID>BENEFITID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1ad1a693-2fad-4094-ad1b-1888d9d20f4d">
+          <AttributeID>BENEFITNAME</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d76312ab-3487-4ed5-88bf-029a6b0ec1a7">
+          <AttributeID>BENEFITPRICE</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8266a75a-88bb-4c10-b228-231a8fc11ac2">
+          <AttributeID>VALIDFROM</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2671f7a5-3bc2-470d-a54f-731930f632ae">
+          <AttributeID>VALIDTO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="0a78b46d-e1ed-4b04-b11d-d12c63b05dea">
+      <ID>SUBSCRIPTIONFACT</ID>
+      <Name>SUBSCRIPTIONFACT</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="90b6089c-a26b-4881-a7c1-99b2f152fcbe">
+          <ID>TOTALSUBSCRIPTIONEARNING</ID>
+          <Name>TOTALSUBSCRIPTIONEARNING</Name>
+          <Source dwd:design-time-name="b8e140ce-337d-4e74-bc23-c241aa3a6c1d">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b95e0720-cb63-49d9-9ba2-7e90144e0733">
+              <TableID>dbo_SUBSCRIPTIONFACT</TableID>
+              <ColumnID>TOTALSUBSCRIPTIONEARNING</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="deb66ce0-82a6-433c-b190-9f546389470f">
+          <ID>TOTALSUBSCRIBERCOUNT</ID>
+          <Name>TOTALSUBSCRIBERCOUNT</Name>
+          <Source dwd:design-time-name="8559c7fd-bd6a-4f36-ad94-fd00d8348522">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="12ded942-cdb8-4181-a415-1bfd643c66b8">
+              <TableID>dbo_SUBSCRIPTIONFACT</TableID>
+              <ColumnID>TOTALSUBSCRIBERCOUNT</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="6ff8a05a-e07f-4214-a2af-66cc9a3f6270">
+          <ID>SUBSCRIPTIONFACT Count</ID>
+          <Name>SUBSCRIPTIONFACT Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="938d9dc4-4d19-4d3d-9740-043e374faa7a">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="54c40994-ac9a-4369-8302-451862528c3f">
+              <TableID>dbo_SUBSCRIPTIONFACT</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="431f7639-7445-4375-8266-9a618a1cb171">
+          <CubeDimensionID>CUSTOMERDIMENSION</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e19cd4da-5e48-4d50-9110-ee418fcd2f9b">
+              <AttributeID>CUSTOMERCODE</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1f983f62-e833-4c92-8ddc-ec15d5653f70">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c37c7d19-3152-4523-8988-ff75f15f8498">
+                    <TableID>dbo_SUBSCRIPTIONFACT</TableID>
+                    <ColumnID>CUSTOMERCODE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ea1a1b4c-0de3-4ed7-8290-22212e6726b0">
+          <CubeDimensionID>STAFFDIMENSION</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f75e6c35-59c7-4871-8258-fd8b107417d2">
+              <AttributeID>STAFFCODE</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ad6f596a-0d58-42d0-bfb0-73dcb7eff329">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8a0ab76d-e48d-4879-b3a6-df9d14b4b12e">
+                    <TableID>dbo_SUBSCRIPTIONFACT</TableID>
+                    <ColumnID>STAFFCODE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1e2cdf72-c880-43ce-a39f-ba07d90ba11a">
+          <CubeDimensionID>BENEFITDIMENSION</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9fe8dc78-d8b5-422c-9dc7-c8fd998efee3">
+              <AttributeID>BENEFITCODE</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="aaf53acf-bfcc-4beb-b878-885a5865ae7a">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="89c916dd-9fb5-441b-8b21-4508bba83b1d">
+                    <TableID>dbo_SUBSCRIPTIONFACT</TableID>
+                    <ColumnID>BENEFITCODE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="7f17abd1-3c04-4956-a147-f8cd5c666ff4">
+    <DataSourceViewID>HOSPITALIE OLAP</DataSourceViewID>
+  </Source>
+</Cube>

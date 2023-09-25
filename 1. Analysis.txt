@@ -1,0 +1,137 @@
+Analysis
+
+Measurement
+=============
+SalesTransaction
+------------------
+TotalSalesEarning = TrSalesDetail.Quantity * MsMedicine.MedicineSellingPrice
+TotalMedicineSold = SUM(TrSalesDetail.Quantity)
+
+PurchaseTransaction
+------------------
+TotalPurchaseCost = SUM(TrPurchaseDetail.Quantity * MsMedicine.MedicineBuyingPrice)
+TotalMedicinePurchased = SUM(TrPurchaseDetail.Quantity)
+
+SubscriptionTransaction
+------------------
+TotalSubscriptionEarning = SUM(MsBenefit.BenefitPrice) 
+TotalSubscriberCount = COUNT(TrSubscriptionHeader.CustomerID)
+
+ServiceTransaction
+------------------
+TotalServiceEarning = SUM(TrServiceDetail.Quantity * MsTreatment.TreatmentPrice) 
+TotalDoctors = COUNT(MsDoctor.DoctorID)
+
+Dimension
+===========
+MedicineDimension
+-------------------
+- MedicineCode [Primary Key]
+- MedicineID [Business Key]
+- MedicineName
+- MedicineSellingPrice [Fixed]
+- MedicineBuyingPrice [Fixed]
+- MedicineExpiredDate [Fixed]
+
+DoctorDimension
+-------------------
+- DoctorCode [Primary Key]
+- DoctorID [Business Key]
+- DoctorName 
+- DoctorDOB [Fixed]
+- DoctorAddress [Changing]
+- DoctorSalary [Historical]
+- ValidFrom
+- ValidTo
+
+StaffDimension
+-------------------
+- StaffCode [Primary Key]
+- StaffID [Business Key]
+- StaffName 
+- StaffDOB [Fixed]
+- StaffAddress [Changing]
+- StaffSalary [Historical]
+- ValidFrom
+- ValidTo
+
+CustomerDimension
+-------------------
+- CustomerCode [Primary Key]
+- CustomerID [Business Key]
+- CustomerName
+- CustomerGender [Derived: Male->M, Female->F]
+- CustomerAddress [Changing]
+
+BenefitDimension
+----------------------
+- BenefitCode [Primary Key]
+- BenefitID [Business Key]
+- BenefitName
+- BenefitPrice [Historical]
+- ValidFrom
+- ValidTo
+
+TreatmentDimension
+----------------------
+- TreatmentCode [Primary Key]
+- TreatmentID [Business Key]
+- TreatmentName
+- TreatmentPrice [Historical]
+- ValidFrom
+- ValidTo
+
+DistributorDimension
+-------------------------
+- DistributorCode [Primary Key]
+- DistributorID [Business Key]
+- DistributorName 
+- DistributorAddress [Changing]
+- DistributorPhone [Changing]
+
+TimeDimension
+-------------------
+- TimeCode [Primary Key]
+- Date
+- Day
+- Month
+- Quarter
+- Year
+
+Fact
+======
+SalesFact
+------------
+- MedicineCode
+- StaffCode
+- CustomerCode
+- TimeCode
+- TotalSalesEarning = SUM(TrSalesDetail.Quantity * MsMedicine.MedicineSellingPrice)
+- TotalMedicineSold = SUM(TrSalesDetail.Quantity)
+
+PurchaseFact
+-----------------
+- MedicineCode
+- StaffCode
+- DistributorCode
+- TimeCode
+- TotalPurchaseCost = SUM(TrPurchaseDetail.Quantity * MsMedicine.MedicineBuyingPrice)
+- TotalMedicinePurchased = SUM(TrPurchaseDetail.Quantity)
+
+SubscriptionFact
+--------------------
+- CustomerCode
+- StaffCode
+- BenefitCode
+- TimeCode
+- TotalSubscriptionEarning = SUM(MsBenefit.BenefitPrice) 
+- TotalSubscriberCount = COUNT(TrSubscriptionHeader.CustomerID)
+
+ServiceFact
+---------------
+- CustomerCode
+- TreatmentCode
+- DoctorCode
+- TimeCode
+- TotalServiceEarning = SUM(TrServiceDetail.Quantity * MsTreatment.TreatmentPrice) 
+- TotalDoctors = COUNT(MsDoctor.DoctorID)
